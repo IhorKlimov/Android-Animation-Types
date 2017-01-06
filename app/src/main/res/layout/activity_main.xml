@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.myhexaville.animationtypes.MainActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <View
+            android:id="@+id/square"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#00e676"
+            android:onClick="animate" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/vector_square"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="64dp"
+            android:onClick="animateVectorSquare"
+            app:srcCompat="@drawable/avd_square"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="39dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="64dp"
+            android:id="@+id/sonic"
+            android:onClick="animateSonic"
+            android:src="@drawable/sonic" />
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>
